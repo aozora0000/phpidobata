@@ -5,6 +5,7 @@
 
         protected function setUp() {
             $hook_id = "__HOOK_ID__";
+
             $this->idobata = new Idobata($hook_id);
         }
 

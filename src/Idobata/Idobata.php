@@ -2,7 +2,7 @@
     namespace Idobata;
     class Idobata implements IdobataInterface
     {
-        const ENDPOINT = "https://idobata.io/hook/%s";
+        const ENDPOINT = "https://idobata.io/hook/generic/%s";
         protected $api,$label,$badge,$message;
 
         public function __construct($hook_id)
