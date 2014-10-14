@@ -7,10 +7,12 @@ php:
 env:
     global:
         secure: "g9Ai1zSujLcLQWJ5PI/XQTthhatFzQdUV3XnCX961+LRzftQ5lKXb/a/RPtmTXoMuECViJoohE9Xxv8gvUwVnRSugo7fIDDuzWuuaCPdyVnqm6gS0boLm+JDmD7Qqo5/mbPUO3WwyjuY3u6qrV5yax5tXPLzkWVzP+CqMyLPzMc="
+before_install:
+  - php /home/travis/.phpenv/versions/5.3.26/bin/composer.phar self-update
 script:
     - sed -e s/__HOOK_ID__/${HOOK_ID}/ ./test/Idobata/IdobataTest.php
     - composer install
-    - ./vendor/bin/phpunit --testdox ./tests
+    - vendor/bin/phpunit --testdox ./tests
 notifications:
   hipchat:
     rooms:
