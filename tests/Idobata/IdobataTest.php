@@ -27,7 +27,7 @@
         }
 
         public function testSendLabelCaseSuccess() {
-            $this->assertTrue($this->idobata->setLabel(Idobata::LABEL_WARNING,"わーにんぐ")->send());
+            $this->assertTrue($this->idobata->setLabel(Idobata::LABEL_WARNING,phpversion())->send());
         }
 
         public function testSendLabelCaseFailed() {
@@ -40,7 +40,7 @@
         }
 
         public function testSendBadgeCaseSuccess() {
-            $this->assertTrue($this->idobata->setBadge(Idobata::BADGE_IMPORTANT,999)->send());
+            $this->assertTrue($this->idobata->setBadge(Idobata::BADGE_IMPORTANT,phpversion())->send());
         }
 
         public function testSendBadgeCaseFailed() {
