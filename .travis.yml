@@ -7,6 +7,9 @@ php:
 env:
     global:
         secure: "g9Ai1zSujLcLQWJ5PI/XQTthhatFzQdUV3XnCX961+LRzftQ5lKXb/a/RPtmTXoMuECViJoohE9Xxv8gvUwVnRSugo7fIDDuzWuuaCPdyVnqm6gS0boLm+JDmD7Qqo5/mbPUO3WwyjuY3u6qrV5yax5tXPLzkWVzP+CqMyLPzMc="
+install:
+    - composer self-update
+    - composer update --prefer-dist
 script:
 - sed -e s/__HOOK_ID__/${HOOK_ID}/ ./tests/Idobata/IdobataTest.php
 - composer install

@@ -1,5 +1,5 @@
 <?php
-    use Idobata;
+    //use Idobata;
 
     class IdobataTest extends PHPUnit_Framework_TestCase {
 
