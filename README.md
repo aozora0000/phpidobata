@@ -2,6 +2,7 @@
 
 for simple send message to Idobata API
 
+[![Build Status](https://travis-ci.org/aozora0000/phpidobata.svg?branch=master)](https://travis-ci.org/aozora0000/phpidobata)
 ## Environment
 - php 5.3
 - php 5.4
