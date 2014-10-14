@@ -1,0 +1,22 @@
+{
+    "name": "aozora0000/php-idobata",
+    "description": "idobata api wrapper",
+    "require": {
+        "rmccue/requests": "~1.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kohei kinoshita",
+            "email": "aozora0000@gmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-0": {
+        "Idobata": "src/"
+      }
+    }
+}
