@@ -11,7 +11,7 @@ install:
     - composer self-update
     - composer update --prefer-dist
 script:
-- sed -e s/__HOOK_ID__/${HOOK_ID}/ ./tests/Idobata/IdobataTest.php
+- sed -i s/__HOOK_ID__/${HOOK_ID}/ ./tests/Idobata/IdobataTest.php
 - composer install
 - ./vendor/bin/phpunit --testdox ./tests
 notifications:
