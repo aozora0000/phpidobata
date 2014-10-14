@@ -4,7 +4,7 @@
     class IdobataTest extends PHPUnit_Framework_TestCase {
 
         protected function setUp() {
-            $hook_id = "b54103f3-4d7a-4937-a195-8b63b0387bf8";
+            $hook_id = "__HOOK_ID__";
 
             $this->idobata = new Idobata($hook_id);
         }
