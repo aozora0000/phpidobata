@@ -1,0 +1,9 @@
+image: bradrydzewski/php:5.5
+script:
+    - curl -sS https://getcomposer.org/installer | php
+    - php composer.phar install --prefer-dist --no-interaction --no-progress
+    - ./vendor/bin/phpunit
+notify:
+    urls:
+        - https://idobata.io/hook/generic/$IDOBATA
+
